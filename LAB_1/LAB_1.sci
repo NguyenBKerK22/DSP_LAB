@@ -26,20 +26,20 @@ xlabel("Time(s)")
 ylabel("Amplitude")
 title("Analog Signal x_a(t) = 3*sin(100πt)")
 //Yêu cầu 2
-//function x = g(t)
-//    x = 3*sin(1/3*%pi*t)
-//endfunction
-//t = linspace(0,30,200);
-//plot(t,g)
-//xlabel("Time(n)")
-//ylabel("Amplitude")
-//title("Analog Signal x(n) = 3*sin(π/3*n)")
+function x = g(t)
+    x = 3*sin(1/3*%pi*t)
+endfunction
+t = linspace(0,30,200);
+plot(t,g)
+xlabel("Time(n)")
+ylabel("Amplitude")
+title("Analog Signal x(n) = 3*sin(π/3*n)")
 //Yêu cầu 3
-//function x = q(t)
-//    x = floor(30*sin(1/3*%pi*t))/10
-//endfunction
-//t = linspace(0,30,200);
-//xlabel("Time(n)")
-//ylabel("Amplitude")
-//title("Analog Signal x(n) = 3*sin(π/3*n) with truncation")
-//plot(t,q)
+function x = q(t)
+    x = floor(30*sin(1/3*%pi*t))/10
+endfunction
+t = linspace(0,30,200);
+xlabel("Time(n)")
+ylabel("Amplitude")
+title("Analog Signal x(n) = 3*sin(π/3*n) with truncation")
+plot(t,q)
